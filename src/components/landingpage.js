@@ -25,11 +25,11 @@ class LandingPage extends Component{
                          <p> HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Java | PHP | MySQL | PostgreSQL </p>
                         <div className="social-links">
                         {/* LinkedIn*/}
-                        <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.linkedin.com/in/amine-benaceur-8a624b170/" rel="noopener noreferrer" target="_blank">
                         <i className="fa fa-linkedin-square"  aria-hidden="true"></i>
                         </a>
                          {/* GitHub*/}
-                         <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">
+                         <a href="https://github.com/AmineBenaceur" rel="noopener noreferrer" target="_blank">
                         <i className="fa fa-github-square"  aria-hidden="true"></i>
                         </a>
                         </div>
