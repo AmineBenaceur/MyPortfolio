@@ -40,6 +40,9 @@
   color: white;
   
 }
+.projects-grid{
+  display: flex;
+}
 
 .banner-text hr{
   border-top: 5px dotted white;
