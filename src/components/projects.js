@@ -83,20 +83,23 @@ class Projects extends Component {
 
     render() {
         return (
-            <div className="project-body">
-            <div className="category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>React & HTML/CSS/JS</Tab>
-                    <Tab>Java & MySQL </Tab>
-                    <Tab> Laravel & postgreSQL </Tab>
-                    <Tab> Other </Tab>
-                </Tabs>
-                <Grid >
-                    <Cell col={12}>
-                        <div className="content" > {this.toggleCategories()} </div>
-                    </Cell>
-                </Grid>
-            </div>
+            <div className="projects-container">
+
+                <div className="category-tabs">
+                    <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                        <Tab>React & HTML/CSS/JS</Tab>
+                        <Tab>Java & MySQL </Tab>
+                        <Tab> Laravel & postgreSQL </Tab>
+                        <Tab> Other </Tab>
+                    </Tabs>
+                    <Grid >
+                        <Cell col={12}>
+                            <div className="projects-background">
+                            </div>
+                            <div className="content" > {this.toggleCategories()} </div>
+                        </Cell>
+                    </Grid>
+                </div>
             </div>
         )
     }

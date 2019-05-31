@@ -14,8 +14,12 @@ class Contact extends Component {
                             className="contact-img"
                         />
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                            
+                            "When I’m working on a problem, I never think about beauty. I think only how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong. " 
+                            <br/> - R. Buckminster Fuller
+                            
+                        </p>
+                       
                     </Cell>
                     <Cell col={6}>
                         <h2> I'd Love to Chat! </h2>
