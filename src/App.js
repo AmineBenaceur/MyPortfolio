@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="demo-big-content">
     <Layout>
-        <Header  className= "header-color"title="Amine Benaceur" scroll>
+        <Header  className= "header-color" title={<h3 color="white"> <a className="header-link" href="/">Amine Benaceur</a> </h3>}  href="/" scroll>
             <Navigation>
-                <Link to="/resume">Resume</Link>
+                <Link className="custom-nav-bar-link" to="/resume"> Resume </Link>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
@@ -30,6 +30,7 @@ function App() {
     </Layout>
 </div>
   );
+  
 }
 
 export default App;
