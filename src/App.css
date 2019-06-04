@@ -158,3 +158,52 @@
 .projects-container{
   /* height: 100%; */
 }
+
+.resume-body{
+  margin: auto;
+  background: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+
+}
+.resume-body Page{
+  margin: auto;
+  background: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+
+}
+
+
+.pdf-doc{
+  justify-content: center;
+   margin: 'auto';
+}
+
+.react-pdf__Document{
+  display: flex;
+  justify-content: center;
+
+}
+
+.resume-nav{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+.resume-nav-button{
+  background-color: #4CA1AF;
+  padding: 8px 17px;
+  color: white;
+}
+
+.react-pdf__Page__canvas{
+  border-radius: 8px;
+  border: 2px solid #4CA1AF;
+}

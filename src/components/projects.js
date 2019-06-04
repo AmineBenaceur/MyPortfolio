@@ -75,7 +75,7 @@ class Projects extends Component {
         }
         else if (this.state.activeTab === 3) {
             return (
-                <div><h2>Other</h2></div>
+                <div><h2>Ruby On Rails </h2></div>
             )
         }
     }
@@ -90,7 +90,7 @@ class Projects extends Component {
                         <Tab>React & HTML/CSS/JS</Tab>
                         <Tab>Java & MySQL </Tab>
                         <Tab> Laravel & postgreSQL </Tab>
-                        <Tab> Other </Tab>
+                        <Tab> Ruby on Rails </Tab>
                     </Tabs>
                     <Grid >
                         <Cell col={12}>

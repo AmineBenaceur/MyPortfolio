@@ -10,7 +10,7 @@ class Contact extends Component {
                         <h2>Amine Benaceur</h2>
                         <img
                             src={ProfilePhoto}
-                            alt="photo"
+                            alt=""
                             className="contact-img"
                         />
                         <p>
