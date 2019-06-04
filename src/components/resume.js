@@ -20,8 +20,8 @@ class Resume extends Component{
         <div className="resume-body">
         <div className="resume-nav">
           <nav>
-            <button className="resume-nav-button" onClick={this.goToPrevPage}>Prev</button>
-            <button className="resume-nav-button" onClick={this.goToNextPage}>Next</button>
+            <button className="resume-nav-button-prev" onClick={this.goToPrevPage}>Prev </button>
+            <button className="resume-nav-button-next" onClick={this.goToNextPage}>Next</button>
           </nav>
         </div>
           <div className ="pdf-doc" >
@@ -32,8 +32,8 @@ class Resume extends Component{
               <Page pageNumber={pageNumber} width={800}  />
             </Document>
           </div>
-  
-          <p>
+            <br/>
+          <p className="pagination">
             Page {pageNumber} of {numPages}
           </p>
 
