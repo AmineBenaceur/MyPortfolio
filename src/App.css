@@ -287,9 +287,10 @@ font-size: 14px;
   color: '##35393a';
 }
 .profile-img{
-  height: 615px;
+  height: 600px;
   justify-content: center;
   padding-bottom: 20px;
+  border: 2px solid #4CA1AF;
 }
 
 .about-me-text hr{
@@ -305,9 +306,14 @@ font-size: 14px;
   text-align: center;
    
  }
+ .about-me-photos h2{
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+   
+ }
  .about-me-text p{
-  width: 75%;
-  margin: 'auto';
+  width: 80%;
+
   padding-top: '2em';
   font-family: 'Vollkorn', sans-serif;
   margin-top: 5%;
@@ -318,13 +324,17 @@ font-size: 14px;
   font-size: 16px;
  }
 .about-me-photos{
-  width: 75%;
+  width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   justify-content: center;
 }
  .about-me-span{
+  width: 100%;
   background-color:#ccffff;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
  }
 
  .row {

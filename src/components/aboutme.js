@@ -23,11 +23,14 @@ class About extends Component{
                     </Cell>
                     <Cell col={6}>
                         <div className="about-me-text">
-                            <h2>A Little About Me</h2>
-                            <hr/>
+                            <h2 >A Little About Me </h2>
+                            {/* <hr/> */}
                             <p> <span className="about-me-span"> Hello! I'm <strong>Amine</strong>, a <strong>Software Engineering</strong> student based in <strong>Calgary, AB </strong> who enjoys building things that live on the internet. I develop exceptional <strong>Websites</strong> and <strong> Web Apps</strong> that provide intuitive, pixel-perfect <strong> User Interfaces </strong> with efficient and <strong>Modern Backends </strong>. My intrests include Web-System Design, Tech-entrepeneurship and Human-Computer Interaction but are growing everyday. When I'm not on my MacBook, I prefer to be playing sports or enjoying the outdoors. </span>  </p>
                         </div>
+                        {/* <hr/> */}
                         <div className="about-me-photos">
+                            <h2 >What I Offer </h2>
+                            
                             <div className="row">
                                 <div className="column">
                                     <img src={UIDesign} alt="Snow" />
@@ -42,6 +45,8 @@ class About extends Component{
                         </div>
 
                     </Cell>
+
+                
                 </Grid>
             </div>
         )
