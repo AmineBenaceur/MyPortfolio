@@ -22,7 +22,7 @@ class LandingPage extends Component{
                         <h1>Full Stack Web Developer</h1>
                          <hr/>
 
-                         <p> HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Java | PHP | MySQL | PostgreSQL </p>
+                         <p> HTML/CSS | Bootstrap | JavaScript | React | PHP | Java | Ruby/Rails | MySQL | PostgreSQL </p>
                         <div className="social-links">
                         {/* LinkedIn*/}
                         <a href="https://www.linkedin.com/in/amine-benaceur-8a624b170/" rel="noopener noreferrer" target="_blank">

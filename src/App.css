@@ -88,7 +88,7 @@
   margin: auto;
   background: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: auto;
-  osition: fixed;
+  position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -135,6 +135,7 @@ font-size: 14px;
   margin-left: 12.5%;
   margin-right: 12.5%;
   color: '##35393a';
+  
   
 }
 
@@ -257,4 +258,85 @@ font-size: 14px;
 .pagination{
   padding-top:0px;
   border: 2px solid #4CA1AF;
+}
+
+/* Resume page CSS */
+.about-body{
+  margin: auto;
+  background: url(https://images.pexels.com/photos/911758/pexels-photo-911758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position:  center; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.about-grid{
+  width: 75%;
+  height: 80%;
+  margin: 'auto';
+  padding-top: '1em';
+  font-family: 'Vollkorn', sans-serif;
+  background-color: white;
+  border: 2px solid #4CA1AF;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  color: '##35393a';
+}
+.profile-img{
+  height: 615px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.about-me-text hr{
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: 'auto';
+  margin-left: 25%;
+  margin-right: 25%;
+   
+ }
+ .about-me-text h2{
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+   
+ }
+ .about-me-text p{
+  width: 75%;
+  margin: 'auto';
+  padding-top: '2em';
+  font-family: 'Vollkorn', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: '##35393a';
+  font-size: 16px;
+ }
+.about-me-photos{
+  width: 75%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+ .about-me-span{
+  background-color:#ccffff;
+ }
+
+ .row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.column img{
+  width: 100px;
+  padding: 5px;
 }
