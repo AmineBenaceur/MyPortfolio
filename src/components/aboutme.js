@@ -22,6 +22,7 @@ class About extends Component{
                        
                     </Cell>
                     <Cell col={7}>
+                    <div className="about-me-wrapper" >
                         <div className="about-me-text">
                             <h2 >   Who I Am </h2>
                             {/* <hr/> */}
@@ -35,19 +36,19 @@ class About extends Component{
                             <div className="row">
                                 <div className="column">
                                     <img src={UIDesign} alt="Snow" />
-                                    <p><strong>Elegant UI Design</strong></p>
+                                    <p> Elegant UI Design </p>
                                 </div>
                                 <div className="column">
                                     <img src={FullStack} alt="Forest" />
-                                    <p> <strong>Full Stack Development</strong></p>
+                                    <p> Full Stack Development</p>
                                 </div>
                                 <div className="column">
                                     <img src={BugIcon} alt="Mountains" />
-                                    <p> <strong>Testing & Quality Assurance</strong></p>
+                                    <p> Testing & Quality Assurance</p>
                                 </div>
                             </div>
                         </div>
-
+                        </div>
                     </Cell>
 
                 
