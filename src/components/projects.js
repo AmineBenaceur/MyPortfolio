@@ -87,10 +87,10 @@ class Projects extends Component {
 
                 <div className="category-tabs">
                     <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                        <Tab>React & HTML/CSS/JS</Tab>
-                        <Tab>Java & MySQL </Tab>
-                        <Tab> Laravel & postgreSQL </Tab>
-                        <Tab> Ruby on Rails </Tab>
+                        <Tab><strong>React & HTML/CSS/JS</strong></Tab>
+                        <Tab><strong>Java & MySQL</strong> </Tab>
+                        <Tab><strong> Laravel & postgreSQL</strong> </Tab>
+                        <Tab> <strong>Ruby on Rails </strong> </Tab>
                     </Tabs>
                     <Grid >
                         <Cell col={12}>

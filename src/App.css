@@ -25,7 +25,13 @@
   height: 100%;
 
 }
-
+.logo-img{
+  height: 45px;
+  width: 130px;
+  float: left;
+  
+  /* border: 2px solid grey;  */
+}
 .avatar-img{
   height: 250px;
   padding-top: 5px;
@@ -173,15 +179,22 @@ font-size: 14px;
   background-size:     cover;                     
   background-repeat:   no-repeat;
   background-position:  center; 
-  filter: blur(2px);
+  filter: blur(5px);
   left: 0px;
   top: 0px;
   z-index: -1;
  
 }
+.mdl-tabs__tab-bar{
+  /* background-color: lightgoldenrodyellow; */
+  opacity: .8;
+  color: #4CA1AF;
+}
 
 .category-tabs{
   filter: none;
+  font-size: 20px;
+  font-weight: bold
 }
 .projects-container{
   /* height: 100%; */
@@ -351,8 +364,8 @@ about-me-wrapper{
  .about-me-span{
   width: 100%;
   background-color:#e4e7e7;
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 5%;
+  margin-right: 5%; */
   justify-content: center;
  }
 
