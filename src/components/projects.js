@@ -34,11 +34,11 @@ class Projects extends Component {
                                 MyPortfolio
                                 </CardTitle>
                             <CardText>
-                                The portfolio website that you are currently looking at! Originally built for myself in ReactJS,  but will however soon be available to others as a template.
+                                The portfolio website that you are currently looking at! Originally built for personal use in ReactJS,  but will however soon be available to others as a template.
             </CardText>
                             <CardActions border>
                                 <Button colored href="https://github.com/AmineBenaceur/MyPorfolio" target="_blank" > GitHub</Button>
-                                <Button colored> Live Demo</Button>
+                                <Button colored href="https://aminebenaceur.github.io/" target="_blank"> Link </Button>
                             </CardActions>
                             <CardMenu Style={{ color: '#fff' }}>
                                 <IconButton name="share" />
@@ -53,8 +53,9 @@ class Projects extends Component {
                                 A front-end To-do list application developed using ReactJS and bootstrap. Was built to use axios as an HTTP client, but was deployed as a static application. 
         </CardText>
                             <CardActions border>
-                                <Button colored> GitHub</Button>
-                                <Button colored> Live Demo</Button>
+                                <Button colored href="https://github.com/AmineBenaceur/todo" target="_blank"> GitHub</Button>
+                                <Button colored href="https://aminebenaceur.github.io/todo/" target="_blank"> Link </Button>
+                                
                             </CardActions>
                             <CardMenu Style={{ color: '#fff' }}>
                                 <IconButton name="share" />
@@ -69,8 +70,8 @@ class Projects extends Component {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </CardText>
                             <CardActions border>
-                                <Button colored> GitHub</Button>
-                                <Button colored> Live Demo</Button>
+                                <Button colored href="https://www.youtube.com/watch?v=35hq-JhyyAo&t=3s" target="_blank">> Live Demo</Button>
+                                
                             </CardActions>
                             <CardMenu Style={{ color: '#fff' }}>
                                 <IconButton name="share" />
@@ -79,19 +80,83 @@ class Projects extends Component {
                         </Cell>
                     </Grid>
 
-
-
-
-
-
-
                 </div>
 
             )
         }
         else if (this.state.activeTab === 1) {
             return (
-                <div><h2>This is Java & MySQL</h2></div>
+                <div className="projects-grid">
+                <Grid className="projects-layout-grid">
+                    <Cell col={4}><Card shadow={5} style={{ minWidth: '450', margin: 'auto' }} >
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center / cover' }}>
+                            Learning Platform
+                </CardTitle>
+                        <CardText>
+                            A multi-threaded client server java application with Swing GUI. Developed for use of students & professors to fascilitate learning, submit and grade assignments, E-mail communication and enrollment into courses. 
+                </CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/AmineBenaceur/LearningPlatform/tree/master/src" target="_blank"> GitHub</Button>
+                        
+                        </CardActions>
+                        <CardMenu Style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                    </Cell>
+                    <Cell col={4}>         <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }} >
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/2600/1*qXcjSfRj0C0ir2yMsYiRyw.jpeg) center / cover' }}>
+                            MyPortfolio
+                            </CardTitle>
+                        <CardText>
+                            The portfolio website that you are currently looking at! Originally built for personal use in ReactJS,  but will however soon be available to others as a template.
+        </CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/AmineBenaceur/MyPorfolio" target="_blank" > GitHub</Button>
+                            <Button colored href="https://aminebenaceur.github.io/" target="_blank"> Link </Button>
+                        </CardActions>
+                        <CardMenu Style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                    </Cell>
+                    <Cell col={4}>                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }} >
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://blog.hubspot.com/hubfs/To_Do_List.png) center / cover' }}>
+                            ToDoList
+    </CardTitle>
+                        <CardText>
+                            A front-end To-do list application developed using ReactJS and bootstrap. Was built to use axios as an HTTP client, but was deployed as a static application. 
+    </CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/AmineBenaceur/todo" target="_blank"> GitHub</Button>
+                            <Button colored href="https://aminebenaceur.github.io/todo/" target="_blank"> Link </Button>
+                            
+                        </CardActions>
+                        <CardMenu Style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                    </Cell>
+                    <Cell col={4}>          <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }} >
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://i0.wp.com/wptavern.com/wp-content/uploads/2018/11/Screen-Shot-2018-11-19-at-8.43.27-PM.png?ssl=1) center / cover' }}>
+                            MoneyWatch - Prototype
+        </CardTitle>
+                        <CardText>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </CardText>
+                        <CardActions border>
+                            <Button colored href="https://www.youtube.com/watch?v=35hq-JhyyAo&t=3s" target="_blank">> Live Demo</Button>
+                            
+                        </CardActions>
+                        <CardMenu Style={{ color: '#fff' }}>
+                            <IconButton name="share" />
+                        </CardMenu>
+                    </Card>
+                    </Cell>
+                </Grid>
+
+            </div>
+
             )
         }
         else if (this.state.activeTab === 2) {

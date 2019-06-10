@@ -9,14 +9,15 @@ function App() {
   return (
     <div className="demo-big-content">
     <Layout>
-        <Header  className= "header-color" title={<h3 color="white">  <img
+        <Header  className= "header-color" title={<h3 color="white"> 
+        <a className="header-link" href="/"> <img
                     src={ABLogo1}
                     alt= "logo"
                     className = "logo-img"
                     />
                     &ensp;
 
-                    <a className="header-link" href="/">Amine Benaceur</a> </h3>}  href="/" scroll>
+                    Amine Benaceur</a> </h3>}  href="/" scroll>
             <Navigation>
                 <Link to="/aboutme"> <strong> About Me </strong> </Link>
                 <Link to="/projects"><strong> Projects </strong></Link>

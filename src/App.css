@@ -206,9 +206,9 @@ contact-list-item span{
  
 }
 .mdl-tabs__tab-bar{
-  /* background-color: lightgoldenrodyellow; */
-  opacity: .8;
-  color: #4CA1AF;
+  /* background-color: lightgray; */
+  /* opacity: .8; */
+  background: url(https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .category-tabs{
