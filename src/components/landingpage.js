@@ -32,6 +32,11 @@ class LandingPage extends Component{
                          <a href="https://github.com/AmineBenaceur" rel="noopener noreferrer" target="_blank">
                         <i className="fa fa-github-square"  aria-hidden="true"></i>
                         </a>
+                          {/* Youtube */}
+                          <a href="https://www.youtube.com/channel/UCQXgGmVBzIh9TmXWudIv0Gw" rel="noopener noreferrer" target="_blank">
+                        <i className="fa fa-youtube-square"  aria-hidden="true"></i>
+                        </a>
+                        
                         </div>
                     </div>
                     </Cell>

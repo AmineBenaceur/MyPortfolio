@@ -52,8 +52,17 @@
   color: white;
   
 }
+.projects-body{
+  display: flex;
+}
 .projects-grid{
   display: flex;
+}
+.projects-grid h2{
+  background-color: #4CA1AF;
+  font-weight: bold;
+  border: 1px white;
+  
 }
 
 .banner-text hr{
@@ -94,7 +103,7 @@
   margin: auto;
   background: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: auto;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -112,12 +121,12 @@ font-size: 14px;
 .contact-grid{
   text-align: center;
   justify-content: center;
-  width: 80%;
-  height: 550px;
+  width: auto;
+  height: 80%;
   background: white;
   color: black;
   border: 3px solid #4CA1AF;
-  margin-bottom: 20px;
+  margin: 0 auto;
   display: flex;
 
 }
@@ -125,11 +134,13 @@ font-size: 14px;
   font-family: 'Anton', sans-serif;
 }
 .contact-img{
-  height: 350px;
+  width: 50%;
+  height: auto;
   /* border-radius: 8px;
   border: 2px solid #4CA1AF; */
   
 }
+
 
 .contact-grid {
   width: 75%;
@@ -165,9 +176,18 @@ font-size: 14px;
   
 }
 .contact-list i {
-  font-size: 60px;
+  font-size: 45px;
   padding-right: 1em;
   padding-bottom: .35em;
+}
+.contact-list{
+  width: 100%;
+  length: 100%;
+
+}
+
+contact-list-item span{
+  font-size: 60px;
 }
 
 {/* project page css*/}
@@ -193,8 +213,11 @@ font-size: 14px;
 
 .category-tabs{
   filter: none;
-  font-size: 20px;
-  font-weight: bold
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+
+
 }
 .projects-container{
   /* height: 100%; */
@@ -280,7 +303,7 @@ font-size: 14px;
   background-size:     cover;                     
   background-repeat:   no-repeat;
   background-position:  center; 
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -288,23 +311,24 @@ font-size: 14px;
 }
 
 .about-grid{
-  width: 1104px;
-  height: 80%;
+  width: 80%;
+  height: auto;
   margin: 'auto';
   padding: '1em';
   font-family: 'Vollkorn', sans-serif;
   background-color: white;
   border: 3px solid #4CA1AF;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  /* margin-left: 12.5%;
+  margin-right: 12.5%; */
+  margin: 0 auto;
   color: '##35393a';
 }
 .profile-img{
-  height: 588px;
+ width: 78%;
+ height: auto;
   text-align: center;
   /* padding-bottom: 20px; */
-  
-  
+  display: flex; 
   border: 2px solid #4CA1AF;
 }
 about-me-wrapper{
@@ -319,6 +343,7 @@ about-me-wrapper{
   margin-right: 20%;
   width: 100%;
   justify-content: center;
+  text-align: center;
 }
 .about-me-text {
   justify-content: center;
@@ -342,6 +367,8 @@ about-me-wrapper{
  .about-me-photos h2{
   font-family: 'Anton', sans-serif;
   text-align: center;
+  width: 100%;
+  height: auto;
    
  }
  .about-me-text p{

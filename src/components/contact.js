@@ -8,6 +8,7 @@ class Contact extends Component {
             <div className="contact-body">
                 <Grid className="contact-grid">
                     <Cell col={6}>
+                        <div className= "contact-left">
                         <h2>Amine Benaceur</h2>
                         <img
                             src={AminoAvatar}
@@ -20,16 +21,17 @@ class Contact extends Component {
                             <br/> - R. Buckminster Fuller
                             
                         </p>
-                       
+                    </div> 
                     </Cell>
                     <Cell col={6}>
+  
                         <h2> Let's Chat! </h2>
-                        <hr />
+                        {/* <hr /> */}
                         <div className="contact-list">
                             <List>
                                 <ListItem>
                                 <div className="contact-list-item">
-                                <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', }}>
+                                <ListItemContent style={{ fontSize: '20px', fontFamily: 'Anton', }}>
                                 &ensp;
                                         <i className="fa fa-phone-square" aria-hidden="true" />
                                         &ensp;&ensp;(587) 700-6628
@@ -38,7 +40,7 @@ class Contact extends Component {
                                 </ListItem>
                                 <ListItem>
                                 <div className="contact-list-item">
-                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', }}>
+                                    <ListItemContent style={{ fontSize: '20px', fontFamily: 'Anton', }}>
                                     &ensp;
                                         <i className="fa fa-envelope" aria-hidden="true" />
                                         &ensp; abenaceur12@gmail.com
@@ -47,19 +49,19 @@ class Contact extends Component {
                                 </ListItem>
                                 <ListItem>
                                 <div className="contact-list-item">
-                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', }}>
+                                    <ListItemContent style={{ fontSize: '20px', fontFamily: 'Anton', }}>
                                     &ensp;
                                         <i className="fa fa-skype" aria-hidden="true" />
-                                        &ensp;&ensp;abenaceur12
+                                        &ensp;&ensp;<span>abenaceur12</span>
                                     </ListItemContent>
                                     </div>
                                 </ListItem>
                                 <ListItem>
                                     <div className="contact-list-item">
-                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', }}>
+                                    <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton', }}>
                                     &ensp;  
                                         <i className="fa fa-linkedin" aria-hidden="true" />
-                                        &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;
+                                        &ensp; &ensp;&ensp;&ensp;&ensp;
                                         <a href="https://www.linkedin.com/in/amine-benaceur-8a624b170/" rel="noopener noreferrer" target="_blank">
                                             <i className="fa fa-link" aria-hidden="true" />
                                         </a>
