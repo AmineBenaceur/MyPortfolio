@@ -26,7 +26,7 @@ class Resume extends Component{
         </div>
           <div className ="pdf-doc" >
             <Document
-              file="./softwarecv.pdf"
+              file="./AmineBenaceurResume.pdf"
               onLoadSuccess={this.onDocumentLoadSuccess}
             >
               <Page pageNumber={pageNumber} width={800}  />

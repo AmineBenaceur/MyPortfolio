@@ -5,6 +5,7 @@ import AminoAvatar from './AminoAvatar.png';
 class LandingPage extends Component{
     render(){
         return(
+            
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className= "landing-grid">
                     <Cell col={12}>
@@ -19,7 +20,7 @@ class LandingPage extends Component{
                     className = "avatar-img"
                     />
                     <div className="banner-text" >
-                        <h1>Full Stack Web Developer</h1>
+                        <h1>Software Developer</h1>
                          <hr/>
 
                          <p> HTML/CSS | Bootstrap | JavaScript | React | PHP | Java | Ruby/Rails | MySQL | PostgreSQL </p>
