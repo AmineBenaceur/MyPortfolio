@@ -1,5 +1,5 @@
     import React, { Component } from 'react';
-    import { Tabs, Tab, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Grid, Cell } from 'react-mdl';
+    import { Tabs, Tab, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Grid, Cell, Layout, Drawer, Navigation, Content} from 'react-mdl';
 
     class Projects extends Component {
         constructor(props) {
@@ -269,33 +269,51 @@
 
         render() {
             return (
-                <div className="projects-container">
+
+            <div >
+                <Layout fixedDrawer>
+                    <Drawer title="Project Categories">
+                        <Navigation>
+                            <a href="#" onClick={() => this.setState({ activeTab: 0 })} >ReactJS & HTML/CSS </a>
+                            <a href="#" onClick={() => this.setState({ activeTab: 1 })}>PHP / Laravel</a>
+                            <a href="#" onClick={() => this.setState({ activeTab: 2 })}>Link</a>
+                            <a href="#" onClick={() => this.setState({ activeTab: 3 })}>Link</a>
+                        </Navigation>
+                    </Drawer>
+                    <Content >
+                    <div className="projects-container">
 
                     <div className="category-tabs" >
-                        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                            <Tab className="projects-catagory-tab" style={{ color: 'white', size: '18px;'}}>
-                                <strong className="tabstrong">ReactJS & HTML/CSS</strong>
-                            </Tab>
-                            
-                            <Tab className="projects-catagory-tab" style={{ color: 'white'}}>
-                                <strong>Java </strong> 
-                            </Tab>
-                            <Tab className="projects-catagory-tab" style={{ color: 'white'}}>
-                                <strong> PHP / Laravel </strong> 
-                            </Tab>
-                            <Tab className="projects-catagory-tab"style={{ color: 'white'}}>
-                                <strong>Ruby on Rails </strong> 
-                            </Tab>
-                        </Tabs>
-                        <Grid >
-                            <Cell col={12}>
-                                <div className="projects-background">
-                                </div>
-                                <div className="content" > {this.toggleCategories()} </div>
-                            </Cell>
-                        </Grid>
+                        {/*
+                            <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                                <Tab className="projects-catagory-tab" style={{ color: 'white', size: '18px;'}}>
+                                    <strong className="tabstrong">ReactJS & HTML/CSS</strong>
+                                </Tab>
+                                
+                                <Tab className="projects-catagory-tab" style={{ color: 'white'}}>
+                                    <strong>Java </strong> 
+                                </Tab>
+                                <Tab className="projects-catagory-tab" style={{ color: 'white'}}>
+                                    <strong> PHP / Laravel </strong> 
+                                </Tab>
+                                <Tab className="projects-catagory-tab"style={{ color: 'white'}}>
+                                    <strong>Ruby on Rails </strong> 
+                                </Tab>
+                            </Tabs>
+                        */}
+                            <Grid >
+                                <Cell col={12}>
+                                    <div className="projects-background">
+                                    </div>
+                                    <div className="content" > {this.toggleCategories()} </div>
+                                </Cell>
+                            </Grid>
+                        </div>
                     </div>
-                </div>
+                    </Content>
+                </Layout>
+            </div>
+               
             )
         }
     }
