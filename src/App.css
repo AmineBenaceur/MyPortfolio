@@ -57,6 +57,7 @@
 }
 .projects-grid{
   display: flex;
+  justify-content: space-evenly;
 }
 .projects-grid h2{
   background-color: #4CA1AF;
