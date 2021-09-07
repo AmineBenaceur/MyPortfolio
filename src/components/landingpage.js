@@ -13,17 +13,16 @@ class LandingPage extends Component{
                     <hr/>
                     <hr/>
                     
-
                     <img
                     src={AminoAvatar}
                     alt= "avatar"
                     className = "avatar-img"
                     />
                     <div className="banner-text" >
-                        <h1>Software Developer</h1>
+                        <h1> Amine Benaceur </h1>
                          <hr/>
 
-                         <p> HTML/CSS | Bootstrap | JavaScript | React | PHP | Java | Ruby/Rails | MySQL | PostgreSQL </p>
+                         <p> HTML/CSS | React | JavaScript | Python | Java | Ruby/Rails | MySQL | PostgreSQL </p>
                         <div className="social-links">
                         {/* LinkedIn*/}
                         <a href="https://www.linkedin.com/in/amine-benaceur-8a624b170/" rel="noopener noreferrer" target="_blank">
