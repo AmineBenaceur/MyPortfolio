@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import {Grid} from 'react-mdl';
 import { Document, Page, pdfjs } from "react-pdf"; pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-
 
 class DownloadLink extends React.Component {
     render() {
@@ -11,7 +8,6 @@ class DownloadLink extends React.Component {
         )
     }
 }
-
 
 class Download extends React.Component {
     render() {
@@ -30,7 +26,6 @@ class Resume extends Component{
       this.setState({ numPages });
     };
   
-
     render() {
       const { pageNumber, numPages } = this.state;
   
@@ -55,4 +50,5 @@ class Resume extends Component{
       );
     }
   }
+
 export default Resume;

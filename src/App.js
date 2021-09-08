@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import { Layout, Header, Drawer, Navigation, Content } from 'react-mdl';
+import { Layout, Header, Navigation, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
-import ABLogo from './components/ABLogo.png';
 import ABLogo1 from './components/ABDevDesign.png';
 function App() {
   return (
