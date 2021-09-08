@@ -6,7 +6,6 @@ import { projectInfo } from './ProjectInfo';
 
 const ProjectCell = (props) => {
 
-
     const backgroundImg = format('url({0}) center / cover', props.project.photo);
 
     return (
@@ -17,7 +16,6 @@ const ProjectCell = (props) => {
                 </CardTitle>
                 <CardText>
                     {props.project.description}
-
                 </CardText>
                 <CardActions className='card-actions' border >
                     {props.project.links.youtube && (<Button colored style={{ background: 'red', color: 'white', width:'20%', 'border-radius': '8px' }} href={props.project.links.youtube} target="_blank" >Video</Button>)}
