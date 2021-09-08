@@ -17,7 +17,7 @@ function App() {
                     />
                     &ensp;
 
-                    Amine Benaceur</a> </h3>}  href="/" scroll>
+                    Home</a> </h3>}  href="/" scroll>
             <Navigation>
                 <Link to="/aboutme"> <strong> About Me </strong> </Link>
                 <Link to="/projects"><strong> Projects </strong></Link>
@@ -25,14 +25,6 @@ function App() {
                 <Link to="/contact"><strong> Contact</strong></Link>
             </Navigation>
         </Header>
-        {/* <Drawer title="Navigation">
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Drawer> */}
        
         <Content>
             <div className="page-content" />

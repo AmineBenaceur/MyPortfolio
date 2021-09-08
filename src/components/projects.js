@@ -3,13 +3,6 @@ import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, G
 import { format } from 'react-string-format';
 import { projectInfo } from './ProjectInfo';
 
-const DrawerNew = (props) => {
-
-    return (
-        <h4> <strong> By Category: </strong> </h4>
-    )
-
-}
 
 const ProjectCell = (props) => {
 
@@ -26,10 +19,10 @@ const ProjectCell = (props) => {
                     {props.project.description}
 
                 </CardText>
-                <CardActions border>
-                    {props.project.links.youtube && (<Button colored style={{ background: 'red', color: 'white' }} href={props.project.links.youtube} target="_blank" >Watch Demo!</Button>)}
-                    {props.project.links.github && (<Button colored style={{ background: 'GRAY', color: 'white' }} href={props.project.links.github} target="_blank" > Github</Button>)}
-                    {props.project.links.link && (<Button colored style={{ background: 'BLUE', color: 'white' }} href={props.project.links.link} target="_blank"> Link </Button>)}
+                <CardActions className='card-actions' border >
+                    {props.project.links.youtube && (<Button colored style={{ background: 'red', color: 'white', width:'20%', 'border-radius': '8px' }} href={props.project.links.youtube} target="_blank" >Video</Button>)}
+                    {props.project.links.github && (<Button colored style={{ background: 'GRAY', color: 'white', width:'20%', 'border-radius': '8px'  }} href={props.project.links.github} target="_blank" > Github</Button>)}
+                    {props.project.links.link && (<Button colored style={{ background: 'BLUE', color: 'white', width:'20%', 'border-radius': '8px' }} href={props.project.links.link} target="_blank"> Link </Button>)}
                 </CardActions>
                 <CardMenu style={{ color: '#fff' }}>
                     <IconButton name="share" />
@@ -42,99 +35,56 @@ const ProjectCell = (props) => {
 class Projects extends Component {
     constructor(props) {
         super(props);
-        this.state = { activeTab: 0 };
-        this.projectInfo = projectInfo;
+        this.state = { activeTab: 'Desktop & Embedded' };
     }
 
 
     toggleCategories() {
-
-        if (this.state.activeTab === 0) { //Desktop & Embedded
-            return (
-                <div className="projects-grid">
-                    <Grid className="projects-layout-grid" style={{ justifyContent: 'space-evenly' }} >
-                        {
-
-                            this.projectInfo.desktopAndEmbedded.map(element => {
-                                return (<ProjectCell project={element} />)
-                            })
-                        }
-
-                    </Grid>
-
-                </div>
-
-            )
-        }
-        else if (this.state.activeTab === 1) {
-            return (
-                <div className="projects-grid">
-                    <Grid className="projects-layout-grid">
-                        {
-                            this.projectInfo.webApps.map(element => {
-                                return (<ProjectCell project={element} />)
-                            })
-                        }
-                    </Grid>
-                </div>
-            )
-        }
-        else if (this.state.activeTab === 2) {
-            return (
-                <div className="projects-grid">
-                    <Grid className="projects-layout-grid">
-                        {
-                            this.projectInfo.designAndUI.map(element => {
-                                return (<ProjectCell project={element} />)
-                            })
-                        }
-                    </Grid>
-                </div>
-
-            )
-        }
+        return (
+            <div className="projects-grid">
+                <Grid className="projects-layout-grid">
+                    {
+                        projectInfo[this.state.activeTab].map(element => {
+                            return (<ProjectCell project={element} />)
+                        })
+                    }
+                </Grid>
+            </div>
+        )
     }
 
-
     render() {
+        const unClickedStyling = { 
+            marginRight: 10, 
+            marginLeft: 10, 
+            textAlign: 'center', 
+            border: '1px solid black', 
+            background: 'white', 
+            color: 'BLACK', 
+        }
+        const clickedStyling = {...unClickedStyling, border: '3px solid black', background: 'gray'}
 
         return (
 
             <div >
                 <Layout fixedDrawer >
-                    <Drawer style={{ background: '#BBDBE1', color: 'BLACK', fontWeight: 'bold', fontSize: 22 }} title={<DrawerNew />} >
+                    <Drawer style={{ background: '#BBDBE1', color: 'BLACK', fontWeight: 'bold', fontSize: 22 }} title={(<h4> <strong> By Category: </strong> </h4>)} >
 
                         <Navigation>
+                            {Object.keys(projectInfo).map((key,i) => {
+                                const name = (i+1) + '. ' + key
+                                const [styling, fullName] = this.state.activeTab === key ? [clickedStyling, <u><strong>{name}</strong></u>] : [unClickedStyling, name];
 
-                            {this.state.activeTab === 0 ?
-                                (
-                                    <a style={{ marginRight: 10, marginLeft: 10, border: '3px solid black', borderColor: 'black', paddingBottom: 20, textAlign: 'center', background: 'gray', color: 'BLACK', }} href="#" onClick={() => this.setState({ activeTab: 0 })} >  <u><strong>1. Desktop / Embedded</strong> </u> </a>
-                                ) : (
-                                    <a style={{ marginRight: 10, marginLeft: 10, textAlign: 'center', border: '1px solid black', background: 'white', color: 'BLACK' }} href="#" onClick={() => this.setState({ activeTab: 0 })} >1. Desktop / Embedded</a>
+                                return (
+                                    <a style={ styling } href="#" onClick={() => this.setState({ activeTab: key })}> {fullName} </a>
                                 )
-                            }
-
-                            {this.state.activeTab === 1 ?
-                                (
-                                    <a style={{ marginRight: 10, marginLeft: 10, textAlign: 'center', border: '3px solid black', background: 'gray', color: 'BLACK', }} href="#" onClick={() => this.setState({ activeTab: 1 })}>  <u><strong>2. Web Applications</strong> </u> </a>
-                                ) : (
-                                    <a style={{ marginRight: 10, marginLeft: 10, textAlign: 'center', border: '1px solid black', background: 'white', color: 'BLACK', }} href="#" onClick={() => this.setState({ activeTab: 1 })}>2. Web Applications</a>
-                                )
-                            }
-
-                            {this.state.activeTab === 2 ?
-                                (
-                                    <a style={{ marginRight: 10, marginLeft: 10, textAlign: 'center', border: '3px solid black', background: 'gray', color: 'BLACK', }} href="#" onClick={() => this.setState({ activeTab: 2 })}>   <u><strong>3. UI Design & Prototypes</strong> </u></a>
-                                ) : (
-                                    <a style={{ marginRight: 10, marginLeft: 10, textAlign: 'center', border: '1px solid black', background: 'white', color: 'BLACK' }} href="#" onClick={() => this.setState({ activeTab: 2 })}>3. UI Design & Prototypes</a>
-                                )
-                            }
-
+                            } )}
+                           
 
                         </Navigation>
 
                     </Drawer>
-                    <Content >
+                    <Content style={{background: 'url(https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}>
                         <div className="projects-container">
 
                             <div className="category-tabs" >

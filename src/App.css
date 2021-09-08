@@ -52,6 +52,11 @@
   color: white;
   
 }
+.banner-text h2{
+  font-size: 35px;
+  color: white;
+  
+}
 .projects-body{
   display: flex;
 }
@@ -102,7 +107,7 @@
 
 .contact-body{
   margin: auto;
-  background: url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: url(https://images.pexels.com/photos/60561/winter-snow-nature-60561.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: auto;
   /* position: fixed; */
   width: 100%;
@@ -126,7 +131,7 @@ font-size: 14px;
   height: 80%;
   background: white;
   color: black;
-  border: 3px solid #4CA1AF;
+  border:3px solid #4CA1AF ;
   margin: 0 auto;
   display: flex;
 
@@ -235,6 +240,10 @@ contact-list-item span{
   background-repeat:   no-repeat;
   background-position:  top; 
 
+}
+.card-actions{
+  display: flex;
+  justify-content: space-evenly;
 }
 .resume-body p{
   background-color: black;

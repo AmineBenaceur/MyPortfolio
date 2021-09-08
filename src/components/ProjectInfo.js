@@ -1,5 +1,5 @@
 export const projectInfo = {
-    desktopAndEmbedded: [
+    'Desktop & Embedded': [
         {
             title: "Lab Animal Monitor",
             description: "An Animal monitor for lab mice with heartrate and temperature monitoring with remote animal heating control functionality.",
@@ -12,7 +12,7 @@ export const projectInfo = {
         },
         {
             title: "Learning Platform",
-            description: "An online learning platform for use of students & professors to fascilitate learning, submit and grade assignments, E-mail communication and enrollment into courses.",
+            description: "An online learning platform for use of students & professors to fascilitate learning, course enrollment submitting & grading assignments, and E-mail communication.",
             photo: "https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
             links: {
                 github: "https://github.com/AmineBenaceur/LearningPlatform",
@@ -63,7 +63,7 @@ export const projectInfo = {
             }
         },
     ],
-    webApps: [
+    'Web Applications': [
         {
             title: "TwitchHub",
             description: "Twitch streaming web application in Laravel to utilize the Twitch API with PostgreSQL. Users can sign up and subscribe to various categories and stream relevant videos from Twitch in their feed.",
@@ -85,16 +85,6 @@ export const projectInfo = {
             }
         },
         {
-            title: "MyBlog",
-            description: "A blogging application built using laravel along with PostgreSQL.",
-            photo: "https://i2.wp.com/storage.googleapis.com/blog-images-backup/1*2gKr79YTmj2MkP8zLOn-bg.png?resize=1201%2C401&ssl=1",
-            links: {
-                github: "https://github.com/AmineBenaceur/MyBlog",
-                youtube: "",
-                link: ""
-            }
-        },
-        {
             title: "FrogBlog",
             description: "Blogging and image sharing application developed using Ruby on Rails and PostgreSQL.",
             photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png",
@@ -104,9 +94,19 @@ export const projectInfo = {
                 link: ""
             }
         },
+        {
+            title: "MyBlog",
+            description: "A blogging application built using laravel along with PostgreSQL.",
+            photo: "https://i2.wp.com/storage.googleapis.com/blog-images-backup/1*2gKr79YTmj2MkP8zLOn-bg.png?resize=1201%2C401&ssl=1",
+            links: {
+                github: "https://github.com/AmineBenaceur/MyBlog",
+                youtube: "",
+                link: ""
+            }
+        },
 
     ],
-    designAndUI: [
+    'UI Design & Static': [
         {
             title: "MoneyWatch - Website",
             description: "A website for the MoneyWatch team. Displays information about us, our vision, stakeholders and our published user research findings and methods.",
