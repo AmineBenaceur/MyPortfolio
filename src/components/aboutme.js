@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import ProfilePhoto from './ProfilePhoto.png';
+import ProfilePhoto from './ProfilePhoto.jpg';
 
 class About extends Component {
     render() {
         return (
             <div className="about-body">
                 <Grid className="about-grid">
-                    <Cell col={5}>
+                    <Cell col={6}>
                         <div className="ProfilePhoto-container">
                             <img
                                 src={ProfilePhoto}
@@ -17,7 +17,7 @@ class About extends Component {
                         </div>
 
                     </Cell>
-                    <Cell col={7}>
+                    <Cell col={6}>
                         <div className="about-me-wrapper" >
                             <div className="about-me-text">
                                 <h2 > Nice to meet you! </h2>

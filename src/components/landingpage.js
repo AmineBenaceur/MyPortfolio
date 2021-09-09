@@ -19,7 +19,7 @@ class LandingPage extends Component{
                     <div className="banner-text" >
                         <h1>Amine Benaceur</h1>
                          <hr/>
-                         <p> HTML/CSS | React | JavaScript | Python | Java | Node.js | Ruby/Rails | MySQL | PostgreSQL </p>
+                         <p> HTML+CSS | React | JavaScript | Python | Java | Node.js | Ruby/Rails | MySQL | PostgreSQL </p>
                         <div className="social-links">
                         {/* LinkedIn*/}
                         <a href="https://www.linkedin.com/in/amine-benaceur-8a624b170/" rel="noopener noreferrer" target="_blank">

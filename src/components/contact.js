@@ -16,16 +16,23 @@ class Contact extends Component {
                                 alt=""
                                 className="contact-img"
                             />
+                            <div className="contact-quote">
                             <p>
                                 "When I’m working on a problem, I never think about beauty. I think only how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong. "
-                                <br /> - R. Buckminster Fuller
                             </p>
+                            
+                            <p>
+                                - R. Buckminster Fuller
+                            </p>
+                            </div>
                         </div>
                     </Cell>
                     <Cell col={6}>
                         <h2> Let's Chat! </h2>
-                        <div className="contact-list">
-                            < ContactUs />
+                        <div className="wrap-contact-list">
+                            <div className="contact-list">
+                                < ContactUs />
+                            </div>
                         </div>
                     </Cell>
                 </Grid>
