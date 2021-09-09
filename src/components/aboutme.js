@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import ProfilePhoto from './ProfilePhoto.png';
+import ProfilePhoto from './ProfilePhoto.jpg';
 
 class About extends Component {
     render() {
         return (
             <div className="about-body">
                 <Grid className="about-grid">
-                    <Cell col={5}>
+                    <Cell col={6}>
                         <div className="ProfilePhoto-container">
                             <img
                                 src={ProfilePhoto}
@@ -17,11 +17,11 @@ class About extends Component {
                         </div>
 
                     </Cell>
-                    <Cell col={7}>
+                    <Cell col={6}>
                         <div className="about-me-wrapper" >
                             <div className="about-me-text">
                                 <h2 > Nice to meet you! </h2>
-                                <p> <span className="about-me-span"> I'm Amine, a <strong>Software Engineering graduate</strong> based in <strong>Calgary, Alberta</strong> who enjoys Hardware Interfacing and building things that live on the web. My experience includes a <strong> 12-month internship </strong> working on hardware interfacing and desktop application development in the field of Focused Ultrasound. My interests include <strong>Web-System Design</strong>, <strong> Cyber Security</strong>, and <strong>Human-Computer Interaction</strong> but are growing every day. When I'm not programming, I prefer to be playing sports or enjoying the outdoors.</span>  </p>
+                                <p> <span className="about-me-span"> I'm Amine, a Software Engineering graduate based in Calgary, Alberta who enjoys Hardware Interfacing and building things that live on the web. My experience includes a 12-month internship working on hardware interfacing and desktop application development in the field of Focused Ultrasound. My interests include Web-System Design, Cyber Security, and Human-Computer Interaction but are growing every day. When I'm not programming, I prefer to be playing sports or enjoying the outdoors.</span>  </p>
                             </div>
                             <br />
                         </div>

@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aminebenaceur.github.io/MyPortfolio",
+  "homepage": "https://amineb.ca",
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "react": "^16.8.6",

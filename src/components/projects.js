@@ -9,12 +9,12 @@ const ProjectCell = (props) => {
     const backgroundImg = format('url({0}) center / cover', props.project.photo);
 
     return (
-        <Cell col={4}>
-            <Card shadow={5} style={{ minWidth: '450', minHeight: '450', margin: 'auto' }} >
+        <Cell className="project-cell" col={4}>
+            <Card shadow={5} style={{ minWidth: '450', minHeight: '450', height:'17vw', width:'20vw', margin: 'auto' }} >
                 <CardTitle style={{ color: '#fff', height: '176px', background: backgroundImg }}>
                     {props.project.title}
                 </CardTitle>
-                <CardText>
+                <CardText className="project-card-text">
                     {props.project.description}
                 </CardText>
                 <CardActions className='card-actions' border >
@@ -82,11 +82,11 @@ class Projects extends Component {
                         </Navigation>
 
                     </Drawer>
-                    <Content style={{background: 'url(https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'}}>
+                    <Content style={{background: 'url(https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center / cover'}}>
                         <div className="projects-container">
 
                             <div className="category-tabs" >
-                                <Grid >
+                                <Grid classname="projects-grid">
                                     <Cell col={12}>
                                         <div className="projects-background">
                                         </div>
