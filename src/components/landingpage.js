@@ -8,9 +8,7 @@ class LandingPage extends Component{
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className= "landing-grid">
                     <Cell col={12}>
-                    <hr/>
-                    <hr/>
-                    <hr/> 
+
                     <img
                     src={AminoAvatar}
                     alt= "avatar"

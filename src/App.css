@@ -2,7 +2,7 @@
   background: #4CA1AF;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
   
 }
 .header-link{
@@ -18,16 +18,18 @@
   background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size:cover;   
   text-align: center;
-  position: fixed;
+  position: absolute;
+  vertical-align: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  margin-top: 10 vw;
 
 }
 .logo-img{
   height: 45px;
-  width: 130px;
+  width: 120px;
   float: left;
   
   /* border: 2px solid grey;  */
@@ -61,10 +63,11 @@
   display: flex;
 }
 .projects-grid{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  spacing: 1;
+  /* justify-content: space-evenly;
   width: 100%;
-  height: 100%;
+  height: 100%; */
 }
 .projects-grid h2{
   background-color: #4CA1AF;
@@ -114,6 +117,9 @@
 .contact-body{
   margin: auto;
   background: url(https://images.pexels.com/photos/60561/winter-snow-nature-60561.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position:  center; 
   background-size: auto;
   /* position: fixed; */
   width: 100%;
@@ -121,6 +127,18 @@
   justify-content: center;
   padding-top: 2em;
 
+}
+.about-body{
+  margin: auto;
+  background: url(https://images.pexels.com/photos/911758/pexels-photo-911758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position:  center; 
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
 }
 .contact-text{
   display: flex;
@@ -133,9 +151,10 @@ justify-content: center;
 text-align: center;
 }
 .wrap-contact-list{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   justify-content: space-between;
+  vertical-align: middle;
 }
 .contact-left {
   justify-content: center;
@@ -241,11 +260,11 @@ contact-list-item span{
   background: url(https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   height: 100%;
   width: 100%;
-  position: absolute;
+  position:fixed;
   background-size:     cover;                     
   background-repeat:   no-repeat;
   background-position:  center; 
-  filter: blur(5px);
+  /* filter: blur(5px); */
   left: 0px;
   top: 0px;
   z-index: -1;
@@ -253,6 +272,7 @@ contact-list-item span{
 }
 
 .project-cell{
+  display: block;
   width: 21vw;
   height: 20vw;
   margin: 0px;
@@ -350,6 +370,8 @@ contact-list-item span{
 
 /* Resume page CSS */
 .about-body{
+
+  box-sizing: border-box;
   margin: auto;
   background: url(https://images.pexels.com/photos/911758/pexels-photo-911758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size:     cover;                     

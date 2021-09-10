@@ -6,20 +6,17 @@ import { Link } from 'react-router-dom';
 import ABLogo1 from './components/ABDevDesign.png';
 function App() {
   return (
-    <div className="demo-big-content">
-    <Layout style={{display: 'flex'}}>
-        <Header  className= "header-color" title={<h3 color="white"> 
-        <a className="header-link" href="/"> 
-          <img
-                    src={ABLogo1}
-                    alt= "logo"
-                    className = "logo-img"
-                    />
-                    &ensp;
-
-                    Home
-                    </a> 
-                  </h3>}  href="/" scroll>
+    <div >
+    <Layout fixedHeader style={{display: 'flex'}}>
+        <Header  className= "header-color" title={
+          <a className="header-link" href="/"> 
+            <img
+              src={ABLogo1}
+              alt= "logo"
+              className = "logo-img"
+              />
+          </a>
+        }  href="/" scroll>
             <Navigation>
                 <Link to="/aboutme"> <strong> About Me </strong> </Link>
                 <Link to="/projects"><strong> Projects </strong></Link>

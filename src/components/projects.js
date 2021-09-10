@@ -9,8 +9,8 @@ const ProjectCell = (props) => {
     const backgroundImg = format('url({0}) center / cover', props.project.photo);
 
     return (
-        <Cell className="project-cell" col={4}>
-            <Card shadow={5} style={{ minWidth: '450', minHeight: '450', height:'17vw', width:'20vw', margin: 'auto' }} >
+        <Cell className="project-cell" col={4} phone={12} tablet={6} noSpacing={true}>
+            <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }} >
                 <CardTitle style={{ color: '#fff', height: '176px', background: backgroundImg }}>
                     {props.project.title}
                 </CardTitle>

@@ -1,13 +1,13 @@
 .form-box {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: space-evenly;
 
     justify-content: center;
     box-sizing: border-box;
     height: 40vh;
-    margin-top: 2vw;
-    margin-bottom:2vw ;
+    /* margin-top: 2vw; */
+    /* margin-bottom:2vw ; */
     padding: 0;
     /* border: 2px solid #4CA1AF 1vw; */
     

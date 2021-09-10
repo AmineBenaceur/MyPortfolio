@@ -7,7 +7,7 @@ class About extends Component {
         return (
             <div className="about-body">
                 <Grid className="about-grid">
-                    <Cell col={6}>
+                    <Cell col={6} allign={"center"}>
                         <div className="ProfilePhoto-container">
                             <img
                                 src={ProfilePhoto}
@@ -17,7 +17,7 @@ class About extends Component {
                         </div>
 
                     </Cell>
-                    <Cell col={6}>
+                    <Cell col={6} allign="center">
                         <div className="about-me-wrapper" >
                             <div className="about-me-text">
                                 <h2 > Nice to meet you! </h2>
